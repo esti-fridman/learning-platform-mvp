@@ -1,3 +1,4 @@
+
 # Learning Platform MVP
 
 ## 📌 תיאור כללי
@@ -16,38 +17,51 @@
 ---
 
 ## ⚙️ התקנה והרצה
+
 ### דרישות מקדימות
 - Node.js (v18+)  
 - Docker + Docker Compose  
 
 ### הוראות התקנה
+1. **שכפול הריפו**:
+   ```bash
+   git clone https://github.com/esti-fridman/learning-platform-mvp.git
+   cd learning-platform-mvp
+   ```
 
-### שכפול הריפו
-git clone https://github.com/esti-fridman/learning-platform-mvp.git
-cd learning-platform-mvp
+2. **התקנת תלויות לכל צד**:
+   - Backend:
+     ```bash
+     cd backend && npm install
+     ```
+   - Frontend:
+     ```bash
+     cd ../frontend && npm install
+     ```
 
-# התקנת תלויות לכל צד
-cd backend && npm install
-cd ../frontend && npm install
-
-
-הרצה עם Docker Compose
+### הרצה עם Docker Compose
+הפלטפורמה מנוהלת באמצעות Docker Compose, כך שכל מה שצריך זה להפעיל את הפקודה:
+```bash
 docker compose up --build
+```
 
-הרצה ידנית
+### הרצה ידנית
+- **Backend**:
+   ```bash
+   cd backend
+   npm run dev
+   ```
 
-Backend:
+- **Frontend**:
+   ```bash
+   cd frontend
+   npm run dev
+   ```
 
-cd backend
-npm run dev
+---
 
-
-Frontend:
-
-cd frontend
-npm run dev
-
-📂 מבנה הפרויקט
+## 📂 מבנה הפרויקט
+```
 learning-platform-mvp/
 │
 ├── backend/        # צד שרת - Express + Prisma + DB
@@ -55,21 +69,18 @@ learning-platform-mvp/
 ├── docker-compose.yml
 ├── README.md
 └── .gitignore
+```
 
-🚀 פיצ'רים
+---
 
-רישום והתחברות משתמשים (JWT Authentication)
+## 🚀 פיצ'רים
+- רישום והתחברות משתמשים (JWT Authentication)
+- בחירת קטגוריות ותתי קטגוריות
+- יצירת שיעורים באמצעות AI
+- שמירה והצגת היסטוריית שיעורים
 
-בחירת קטגוריות ותתי קטגוריות
+---
 
-יצירת שיעורים באמצעות AI
-
-שמירה והצגת היסטוריית שיעורים
-
-📖 הוראות נוספות
-
-ניהול הסכמה של DB: npx prisma migrate dev
-
-צפייה ב־Prisma Studio: npx prisma studio
-
-```bash
+## 📖 הוראות נוספות
+- ניהול הסכמה של DB: `npx prisma migrate dev`
+- צפייה ב־Prisma Studio: `npx prisma studio`
