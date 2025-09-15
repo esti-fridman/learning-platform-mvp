@@ -82,5 +82,11 @@ learning-platform-mvp/
 ---
 
 ## 📖 הוראות נוספות
-- ניהול הסכמה של DB: `npx prisma migrate dev`
-- צפייה ב־Prisma Studio: `npx prisma studio`
+- ניהול הסכמה של DB: 
+ ```bash
+`npx prisma migrate dev`
+```
+- צפייה ב־Prisma Studio:
+ ```bash
+ `npx prisma studio`
+ ```
