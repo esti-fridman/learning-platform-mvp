@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* RTL וכללי בסיס נקיים */
+html { direction: rtl; }
+body { @apply bg-gray-50 text-gray-900; }
+
+/* אפשר להשאיר לינקים וכפתורים אם רוצים, אבל בלי לכפות רקע כהה וכלי Center גלובליים */
+a { @apply text-indigo-600 hover:underline; }

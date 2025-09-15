@@ -7,7 +7,7 @@ import { authGuard } from "../middlewares/authGuard";
 const r = Router();
 
 // יצירת שיעור
-r.post("/", async (req, res, next) => {
+r.post("/",authGuard, async (req, res, next) => {
   try {
     const parsed = CreatePromptSchema.safeParse(req.body);
     if (!parsed.success) return res.status(400).json(parsed.error.flatten());
