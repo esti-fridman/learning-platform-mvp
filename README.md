@@ -21,8 +21,8 @@
 - Docker + Docker Compose  
 
 ### הוראות התקנה
-```bash
-# שכפול הריפו
+
+### שכפול הריפו
 git clone https://github.com/esti-fridman/learning-platform-mvp.git
 cd learning-platform-mvp
 
@@ -71,3 +71,5 @@ learning-platform-mvp/
 ניהול הסכמה של DB: npx prisma migrate dev
 
 צפייה ב־Prisma Studio: npx prisma studio
+
+```bash
